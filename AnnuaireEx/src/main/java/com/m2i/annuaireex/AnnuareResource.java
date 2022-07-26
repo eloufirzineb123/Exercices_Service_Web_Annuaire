@@ -21,13 +21,7 @@ import javax.ws.rs.core.Response;
 @Path("/personnes")
 public class AnnuareResource {
     
-    @GET
-    @Path("aa")
-    @Produces("text/plain")
-    public String getHelloWorld(){
-        return "hello World from text/plain";
-    }
-    
+       
     @GET
     @Produces({ MediaType.APPLICATION_JSON })
     public List<Personne> getPersonnes(@Context HttpServletRequest request) {
